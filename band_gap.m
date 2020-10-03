@@ -89,7 +89,9 @@ plot_fig(base_line_x_to_electron_volts_zoomed, ...
     'Energy(eV)', '$(\alpha \hbar \omega)^2$', ...
     'Graph Needed to Solve Band Gap', ...
     'northwest');
-
+xlabel('Energy(eV)', 'Interpreter', 'latex');
+ylabel('$(\alpha \hbar \omega)^2$', 'Interpreter', 'latex');
+title('Graph Needed to Solve Band Gap', 'Interpreter', 'latex');
 hold off;
 
 save_fig('graph_needed_to_solve_band_gap_zoomed')
@@ -137,7 +139,9 @@ fit_and_plot(lower_limit, upper_limit, FIT_TYPE, ...
     transmittance_20min_zoomed, ...
     transmittance_30min_zoomed, ...
     transmittance_40min_zoomed);
-
+xlabel('Energy(eV)', 'Interpreter', 'latex');
+ylabel('$(\alpha \hbar \omega)^2$', 'Interpreter', 'latex');
+title('Graph Needed to Solve Band Gap', 'Interpreter', 'latex');
 legend({'0min', '10min', '20min', '30min', '40min'});
 hold off;
 save_fig('fitting_result')
