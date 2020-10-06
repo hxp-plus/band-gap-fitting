@@ -6,7 +6,7 @@
 %% Clear workspace and load data
 clear;
 clc;
-load('data/band_gap.mat');
+load('data/band_gap_zc.mat');
 
 
 %% Constants
