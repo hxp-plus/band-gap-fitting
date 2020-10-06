@@ -1,10 +1,10 @@
 %% plot_fig.m
-%  Plot figures
+%  Plot all figures
 %  author: hxp<hxp201406@gmail.com>
 %  Version: MATLAB R2019b Linux
 
 
-function plot_fig(x, y0, y1, y2, y3, y4, legends, ...
+function plot_all_fig(x, y0, y1, y2, y3, y4, legends, ...
     label_x, label_y, fig_title, label_position)
     plot(x, y0);
     plot(x, y1);
