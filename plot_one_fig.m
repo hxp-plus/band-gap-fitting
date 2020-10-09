@@ -7,7 +7,7 @@
 function plot_one_fig(x, y0, legends, ...
     label_x, label_y, fig_title, label_position)
     plot(x, y0);
-    legend(legends,'Location', label_position, 'NumColumns', 1);
+%     legend(legends,'Location', label_position, 'NumColumns', 1);
     xlabel(label_x, 'Interpreter', 'latex');
     ylabel(label_y, 'Interpreter', 'latex');
     title(fig_title, 'Interpreter', 'latex');
