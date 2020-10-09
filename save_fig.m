@@ -6,7 +6,8 @@
 function save_fig(save_path)
     mkdir(['figures/' ,save_path]);
         savefig(['figures/', save_path ,'/' ,save_path ,'.fig']);
-        saveas(gcf,['figures/', save_path, '/' , save_path, '.png']);
+        print(gcf,['figures/', save_path, '/' , save_path, '.png'], ...
+            '-dpng','-r600');
         saveas(gcf,['figures/', save_path, '/',save_path],'epsc');
     disp(['Saved:', save_path]);
 end
